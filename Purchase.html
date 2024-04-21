@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Go-Coins</title>
+    <style>
+       body {
+   background-color: rgb(29, 105, 77);
+}
+.heading{
+   color: rgb(237, 237, 222);
+   text-align: center;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   outline-color: black;
+}
+.table {
+   padding: 16px 32px;
+   width: 100%;
+   height: 100%;
+}
+.button{
+   background-color: rgb(36, 34, 34);
+   color: rgb(255, 98, 98);
+   padding: 16px 32px;
+}
+.iframe{
+   margin-left: 400px;
+   margin-right: 400px;
+}
+.img{
+   margin-left: 560px;
+}
+
+    </style>
+
+</head>
+
+<body>
+   <h1> Buy Go-Coins </h1>
+   <div>Go-coins: <span id="tgc">0</span></div>
+   <table class = "table">
+      <tr>
+          <td>
+            <button onclick = "incrementByTen()"id="ten" class ="button">10 coins </button>
+          </td>
+          <td>
+            <button onclick = "incrementBytwenty()"id="twenty" class ="button"> 20 coins </a>
+          </td>
+          <td>
+            <button onclick = "incrementBythirty()"id="thirty" class ="button"> 30 coins </a>
+          </td>
+          <td>
+            <button onclick = "incrementByfourty()"id="fourty" class ="button"> 40 coins</a>
+          </td>
+          <td>
+            <button onclick = "incrementByfifty()"id="fifty" class ="button"> 50 coins </a>
+          </td>
+      </tr>
+  </table>
+<script>
+
+<div>Go-coins:<span id="value">0</span></div>
+var gocoins = 0;
+var tenb = document.getElementById="ten"
+var twentyb = document.getElementById="twenty"
+var thirtyb = document.getElementById="thirty"
+var fourtyb = document.getElementById="fourty"
+var fiftyb = document.getElementById="fifty"
+var totalgc = document.getElementById="tgc"
+
+function incrementbyten() {
+   gocoins += 10;
+   document.getElementById("value").textContent = gocoins;
+}
+
+function incrementBytwenty() {
+   gocoins += 20;
+   document.getElementById("value").textContent = gocoins;
+}
+function incrementBythirty() {
+   gocoins += 30;
+   document.getElementById("value").textContent = gocoins;
+}
+function incrementByfourty() {
+   gocoins += 40;
+   document.getElementById("value").textContent = gocoins;
+}
+function incrementByfifty() {
+   gocoins += 50;
+   document.getElementById("value").textContent = gocoins;
+}
+</script>
+
+
+<a href="index.html">
+   <button> Return </button>
+</a>
+    
+    
+</body>
+</html>
